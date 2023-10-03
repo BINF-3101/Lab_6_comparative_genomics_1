@@ -85,7 +85,49 @@ What is the sequence's identifier (or name) producing the most significant align
 
 ## Step 4 Extract the sequences
 
+### Step 4a - Create a file with your sequence identifier in it
 We want to get the nucleotide and protein sequences of the PGM1 ortholog. We can do this using the sequence identifier. 
+
+We want to add the sequence identifier to a list of genes in a file. To do this we can use the bash command echo. 
+
+``bash
+echo "sequence_name_from_blast" > to_get.txt
+```
+
+If you look at the to_get.txt file it should contain 1 line with your desired sequence identifier.
+
+### Step 4b - Extract the protein sequence with seqtk
+
+Now we will use the seqtk package to extract our protein sequence. To do this you will execute a command similar to the one below
+
+```bash
+module load seqtk
+
+seqtk subseq clear_SRR0000.prot.fasta to_get.txt > SRR00000.pgm1.fasta
+```
+
+### Step 4c - Copy your pgm1 file into the class space
+
+Copy your pgm1 fasta file into the shared class directory.
+
+```bash
+cp SRR0000.pgm1.fasta /projects/class/binf3101_001/pgm1_class_results/.
+```
+
+### Step 5 Pick a metabolic pathway
+
+Download the yeast_metabolic_data.xlsx from the Canvas Lab 6 instructions. 
+
+Find your species name on the list. 
+
+Find a substrate that your yeast species grows on that you would like to focus on. 
+
+# LQ 6 
+Report the substrate you would like to focus on for Lab 7.
+
+
+
+
 
 
 
