@@ -12,7 +12,6 @@ To set up your lab_6 folder you will need to add just three files.
 
 Create a new lab_6 folder and then add the following files to that folder using `cp`
 - pgm1 nucleotide fasta file `/projects/class/binf3101_001/pgm1/pgm1.fasta`
-- Your nucleotide CDS file that should be in your lab_5 folder example: SRR6475892.cds.fasta
 - Your translated protein file that should be in your lab_5 folder example: SRR6475892.prot.fasta
 
 ## Step 3 fix our fasta files
@@ -27,14 +26,13 @@ cp /projects/class/binf3101_001/sequence_cleaner.py .
 
 module load anaconda3
 
-python sequence_cleaner.py SRR0000.cds.fasta
 python sequence_cleaner.py SRR0000.prot.fasta
 
 ```
 
-This will produce two new files 
+This will produce a new file
 clear_SRR0000.prot.fasta 
-clear_SRR0000.cds.fasta
+
 
 **Use the clear files moving forward**
 
@@ -69,6 +67,29 @@ Draft your blastx command. Execute the command and look at the results.
 
 
 ## Step 3 Analyze your blast output
+
+Take a look at your blast results. You should **at least 1 significant hit** in your results. Answer the questions below about your blast output
+
+# LQ 2 
+How many sequences produced significant alignments to the reference PGM1?
+
+# LQ 3 
+What is the E-value associated with your most significant alignment?
+
+# LQ 4 
+What is your most significant alignment's % identity to the reference PGM1 sequence?
+
+# LQ 5 
+What is the sequence's identifier (or name) producing the most significant alignment?
+
+
+## Step 4 Extract the sequences
+
+We want to get the nucleotide and protein sequences of the PGM1 ortholog. We can do this using the sequence identifier. 
+
+
+
+
 
 
 
