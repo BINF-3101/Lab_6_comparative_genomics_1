@@ -15,7 +15,26 @@ Create a new lab_6 folder and then add the following files to that folder using 
 - Your nucleotide CDS file that should be in your lab_5 folder example: SRR6475892.cds.fasta
 - Your translated protein file that should be in your lab_5 folder example: SRR6475892.prot.fasta
 
-## Step 2 blastx command
+## Step 3 fix our fasta files
+
+Due to the format of braker many of the coding sequences are reported more than once in our cds.fasta and prot.fasta files. 
+
+To fix this you must complete the following steps. 
+
+```bash
+cd lab_6
+cp /projects/class/binf3101_001/sequence_cleaner.py .
+
+module load anaconda3
+
+sequence_cleaner.py SRR0000.cds.fasta
+sequence_cleaner.py SRR0000.prot.fasta
+
+```
+
+
+
+## Step 3 blastx command
 
 You will be using **blastx** to search your protein coding sequences with the nucleotide sequence of PGM1. 
 
