@@ -27,16 +27,26 @@ cp /projects/class/binf3101_001/sequence_cleaner.py .
 
 module load anaconda3
 
-sequence_cleaner.py SRR0000.cds.fasta
-sequence_cleaner.py SRR0000.prot.fasta
+python sequence_cleaner.py SRR0000.cds.fasta
+python sequence_cleaner.py SRR0000.prot.fasta
 
 ```
+
+This will produce two new files 
+clear_SRR0000.prot.fasta 
+clear_SRR0000.cds.fasta
+
+**Use the clear files moving forward**
+
+# LQ 1
+
+How many sequences are in your **clear** prot.fasta file?
 
 
 
 ## Step 3 blastx command
 
-You will be using **blastx** to search your protein coding sequences with the nucleotide sequence of PGM1. 
+You will be using **blastx** to search your protein-coding sequences with the nucleotide sequence of PGM1. 
 
 You can read all about the blast command line options here: https://www.ncbi.nlm.nih.gov/books/NBK279684/
 
