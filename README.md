@@ -10,7 +10,7 @@
 
 [Lab Question 1](#lq-1)
 
-[Step 3 Blastx](#step-3-blastx-command)
+[Step 3 blastp](#step-3-blastp-command)
 
 [Step 4 Analyze Blast output](#step-4-analyze-your-blast-output)
 
@@ -74,9 +74,9 @@ How many sequences are in your **clear** prot.fasta file?
 
 &ensp;
 &ensp;
-## Step 3 blastx command
+## Step 3 blastp command
 
-You will be using **blastx** to search your protein-coding sequences with the nucleotide sequence of PGM1. 
+You will be using **blastp** to search your protein-coding sequences with the nucleotide sequence of PGM1. 
 
 You can read all about the blast command line options here: https://www.ncbi.nlm.nih.gov/books/NBK279684/
 
@@ -90,12 +90,12 @@ module load blast
 **NOTE** The results will print to your screen when you use any of the blast commands in the command line. If you want to save the results to a file you can add a `>` to the end of your command and that will direct the output to a new file. For example
 
 ```bash
-blastx options > results.txt
+blastp options > results.txt
 ```
 
 Instead of printing the results to the screen, they will now be saved in the results.txt file that you can open! 
 
-Draft your blastx command. Execute the command and look at the results. 
+Draft your blastp command. Execute the command and look at the results. 
 
 &ensp;
 &ensp;
