@@ -76,7 +76,7 @@ How many sequences are in your **clear** prot.fasta file?
 &ensp;
 ## Step 3 blastp command
 
-You will be using **blastp** to search your protein-coding sequences with the nucleotide sequence of PGM1. 
+You will be using **blastp** to search your protein-coding sequences with the protein sequence of PGM1. 
 
 You can read all about the blast command line options here: https://www.ncbi.nlm.nih.gov/books/NBK279684/
 
