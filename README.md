@@ -124,7 +124,7 @@ We want to get the nucleotide and protein sequences of the PGM1 ortholog. We can
 
 We want to add the sequence identifier to a list of genes in a file. To do this we can use the bash command echo. 
 
-``bash
+```bash
 echo "sequence_name_from_blast" > to_get.txt
 ```
 
