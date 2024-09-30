@@ -75,6 +75,8 @@ You will be writing your own blast command. Our goal is to search your protein-c
 
 Draft your blastp command. Execute the command and look at the results. 
 
+**SET YOUR e-value to 1e-25**
+
 &ensp;
 &ensp;
 ## Step 4 Analyze your blast output
