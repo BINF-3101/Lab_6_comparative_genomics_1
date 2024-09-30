@@ -24,7 +24,7 @@
 
 &ensp;
 ## Introduction
-This week in lab, we will find the gene **PGM1** in your genome annotations. We will be using Blast on the cluster. 
+This week in lab, we will find the gene **Rad53** in your genome annotations. We will be using Blast on the cluster. 
 The end result will be a fasta protein sequence file with your ortholog(s) in it.
 
 This week, you **will be writing your own commands**. This may take some trial and error. Don't forget to look at any files you produce. 
@@ -37,7 +37,7 @@ This week, you **will be writing your own commands**. This may take some trial a
 To set up your lab_6 folder you will need to add just three files.
 
 Create a new lab_6 folder and then add the following files to that folder using `cp`
-- pgm1 nucleotide fasta file `/projects/class/binf3101_001/pgm1/pgm1.fasta`
+- Rad53 nucleotide fasta file `/projects/class/binf3101_001/Rad53/Rad53.fasta`
 - Your translated protein file that should be in your lab_5 folder example: SRR6475892.prot.fasta
 &ensp;
 &ensp;
@@ -48,7 +48,7 @@ Create a new lab_6 folder and then add the following files to that folder using 
 ## Step 2 blastp command
 
 ### Step 2a - read about BLASTp
-You will be using **blastp** to search your protein-coding sequences with the protein sequence of PGM1. 
+You will be using **blastp** to search your protein-coding sequences with the protein sequence of Rad53. 
 
 You can read all about the blast command line options here: https://www.ncbi.nlm.nih.gov/books/NBK279684/
 
@@ -71,7 +71,7 @@ Instead of printing the results to the screen, they will now be saved in the res
 
 ### Step 2b - write the blast command!
 
-You will be writing your own blast command. Our goal is to search your protein-coding sequences for the gene PGM1. We have an example PGM1 gene in the pgm1.fasta file. 
+You will be writing your own blast command. Our goal is to search your protein-coding sequences for the gene Rad53. We have an example Rad53 gene in the Rad53.fasta file. 
 
 Draft your blastp command. Execute the command and look at the results. 
 
@@ -79,28 +79,28 @@ Draft your blastp command. Execute the command and look at the results.
 
 &ensp;
 &ensp;
-## Step 4 Analyze your blast output
+## Step 3 Analyze your blast output
 
 Take a look at your blast results. You should **at least 1 significant hit** in your results. Answer the questions below about your blast output
 &ensp;
-# LQ 2 
-How many sequences produced significant alignments to the reference PGM1?
+# LQ 1 
+How many sequences produced significant alignments to the reference Rad53?
 &ensp;
-# LQ 3 
+# LQ 2 
 What is the E-value associated with your most significant alignment?
 &ensp;
-# LQ 4 
-What is your most significant alignment's % identity to the reference PGM1 sequence?
+# LQ 3 
+What is your most significant alignment's % identity to the reference Rad53 sequence?
 &ensp;
-# LQ 5 
+# LQ 4
 What is the sequence's identifier (or name) producing the most significant alignment?
 
 &ensp;
 &ensp;
-## Step 5 Extract the sequences
+## Step 4 Extract the sequences
 &ensp;
-### Step 5a - Create a file with your sequence identifier in it
-We want to get the nucleotide and protein sequences of the PGM1 ortholog. We can do this using the sequence identifier. 
+### Step 4a - Create a file with your sequence identifier in it
+We want to get the nucleotide and protein sequences of the Rad53 ortholog. We can do this using the sequence identifier. 
 
 We want to add the sequence identifier to a list of genes in a file. To do this we can use the bash command echo. 
 
@@ -110,25 +110,35 @@ echo "sequence_name_from_blast" > to_get.txt
 
 If you look at the to_get.txt file it should contain 1 line with your desired sequence identifier.
 &ensp;
-### Step 5b - Extract the protein sequence with seqtk
+### Step 4b - Extract the protein sequence with seqtk
 
 Now we will use the seqtk package to extract our protein sequence. To do this you will execute a command similar to the one below
 
 ```bash
 module load seqtk
 
-seqtk subseq clear_SRR0000.prot.fasta to_get.txt > SRR00000.pgm1.fasta
+seqtk subseq SRR0000.prot.fasta to_get.txt > SRR00000.Rad53.fasta
 ```
 &ensp;
-### Step 5c - Copy your pgm1 file into the class space
+### Step 5c - Copy your Rad53 file into the class space
 
-Copy your pgm1 fasta file into the shared class directory.
+Copy your Rad53 fasta file into the shared class directory.
 
 ```bash
-cp SRR0000.pgm1.fasta /projects/class/binf3101_001/pgm1_class_results/.
+cp SRR0000.Rad53.fasta /projects/class/binf3101_001/Rad53_class_results/.
 ```
 &ensp;
 &ensp;
+
+&ensp;
+# LQ 5
+Take a look at the _Saccharomyces_ genome database https://www.yeastgenome.org/ and search for our gene Rad53
+
+What process is the gene Rad53 involved in?
+
+# LQ 6
+What chromosome is Rad53 located on in _Saccharomyces cerevisiae_
+
 
 ### Step 6 Pick a metabolic pathway
 
