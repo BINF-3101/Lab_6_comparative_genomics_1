@@ -24,7 +24,7 @@
 
 [Lab Question 6](#lq-6)
 
-[Step 5 Pick a metabolic pathway](#step-5-pick-a-metabolic-pathway)
+
 
 &ensp;
 ## Introduction
@@ -144,16 +144,6 @@ What process is the gene Rad53 involved in?
 What chromosome is Rad53 located on in _Saccharomyces cerevisiae_
 
 
-### Step 6 Pick a metabolic pathway
-
-Download the yeast_metabolic_data.xlsx from the Canvas Lab 6 instructions. 
-
-Find your species name on the list. 
-
-Find a substrate that your yeast species grows on that you would like to focus on. 
-&ensp;
-# LQ 6 
-Report the substrate you would like to focus on for Lab 7.
 
 
 
