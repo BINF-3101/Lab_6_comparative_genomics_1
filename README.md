@@ -6,13 +6,11 @@
 
 [Step 1 Setup](#step-1-setup)
 
-[Step 2 Fix fasta files](#step-2-fix-our-fasta-files)
+[Step 2 blastp](#step-2-blastp-command)
+
+[Step 3 Analyze Blast output](#step-3-analyze-your-blast-output)
 
 [Lab Question 1](#lq-1)
-
-[Step 3 blastp](#step-3-blastp-command)
-
-[Step 4 Analyze Blast output](#step-4-analyze-your-blast-output)
 
 [Lab Question 2](#lq-2)
 
@@ -20,11 +18,9 @@
 
 [Lab Question 4](#lq-4)
 
-[Lab Question 5](#lq-5)
+[Step 4 Extract sequences](#step-4-extract-the-sequences)
 
-[Step 5 Extract sequences](#step-5-extract-the-sequences)
-
-[Step 6 Pick a metabolic pathway](#step-6-pick-a-metabolic-pathway)
+[Step 5 Pick a metabolic pathway](#step-5-pick-a-metabolic-pathway)
 
 &ensp;
 ## Introduction
@@ -45,40 +41,18 @@ Create a new lab_6 folder and then add the following files to that folder using 
 - Your translated protein file that should be in your lab_5 folder example: SRR6475892.prot.fasta
 &ensp;
 &ensp;
-## Step 2 fix our fasta files
-
-Due to the format of braker many of the coding sequences are reported more than once in our cds.fasta and prot.fasta files. 
-
-To fix this you must complete the following steps. 
-
-```bash
-cd lab_6
-cp /projects/class/binf3101_001/sequence_cleaner.py .
-
-module load anaconda3
-
-python sequence_cleaner.py SRR0000.prot.fasta
-
-```
-
-This will produce a new file
-clear_SRR0000.prot.fasta 
-
-
-**Use the clear files moving forward**
-&ensp;
-# LQ 1
-
-How many sequences are in your **clear** prot.fasta file?
 
 
 &ensp;
 &ensp;
-## Step 3 blastp command
+## Step 2 blastp command
 
+### Step 2a - read about BLASTp
 You will be using **blastp** to search your protein-coding sequences with the protein sequence of PGM1. 
 
 You can read all about the blast command line options here: https://www.ncbi.nlm.nih.gov/books/NBK279684/
+
+Here is a tutorial on BLAST on the command line: https://open.oregonstate.education/computationalbiology/chapter/command-line-blast/ 
 
 The entire blast suite is already installed on the cluster. To activate it, you use
 
@@ -90,10 +64,14 @@ module load blast
 **NOTE** The results will print to your screen when you use any of the blast commands in the command line. If you want to save the results to a file you can add a `>` to the end of your command and that will direct the output to a new file. For example
 
 ```bash
-blastp options > results.txt
+blastp OPTIONS > results.txt
 ```
 
 Instead of printing the results to the screen, they will now be saved in the results.txt file that you can open! 
+
+### Step 2b - write the blast command!
+
+You will be writing your own blast command. Our goal is to search your protein-coding sequences for the gene PGM1. We have an example PGM1 gene in the pgm1.fasta file. 
 
 Draft your blastp command. Execute the command and look at the results. 
 
