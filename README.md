@@ -20,6 +20,10 @@
 
 [Step 4 Extract sequences](#step-4-extract-the-sequences)
 
+[Lab Question 5](#lq-5)
+
+[Lab Question 6](#lq-6)
+
 [Step 5 Pick a metabolic pathway](#step-5-pick-a-metabolic-pathway)
 
 &ensp;
