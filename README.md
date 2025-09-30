@@ -42,7 +42,7 @@ To set up your lab_6 folder you will need to add just three files.
 
 Create a new lab_6 folder and then add the following files to that folder using `cp`
 - Rad53 protein fasta file `/projects/class/binf3101_001/rad53.fasta`
-- Your translated protein file that should be in your lab_5 folder example: SRRXXXX.prot.fasta
+- Your translated protein file that should be in your lab_5 folder example: SRRXXXX.prot.fa
 
 If you did not complete lab 5, you can copy your SRRXXXX.prot.fasta file from the folder /projects/class/binf3101_001/class_prot_fasta/
 &ensp;
