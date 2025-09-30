@@ -63,7 +63,7 @@ Here is a tutorial on BLAST on the command line: https://open.oregonstate.educat
 The entire blast suite is already installed on the cluster. To activate it, you use
 
 ```bash
-ml blast/2.11.0+
+ml blast
 ```
 
 
