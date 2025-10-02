@@ -44,7 +44,6 @@ Create a new lab_6 folder and then add the following files to that folder using 
 - Rad53 protein fasta file `/projects/class/binf3101_001/lab_6/rad53.fasta`
 - Your translated protein file that should be in your lab_5 folder example: SRRXXXX.prot.fa
 
-If you did not complete lab 5, you can copy your SRRXXXX.prot.fasta file from the folder /projects/class/binf3101_001/class_prot_fasta/
 &ensp;
 &ensp;
 
@@ -128,7 +127,7 @@ seqtk subseq SRR0000.prot.fasta to_get.txt > SRR00000.Rad53.fasta
 &ensp;
 ### Step 5c - Copy your Rad53 file into the class space
 
-Copy your Rad53 fasta file into the shared class directory.
+Copy your Rad53 fasta file into the shared class directory. _fixed after class on thursday_
 
 ```bash
 cp SRR0000.Rad53.fasta /projects/class/binf3101_001/Rad53_class_results/.
